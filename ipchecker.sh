@@ -2,12 +2,12 @@
 VERSION="2.1"
 
 # Colors
-RED="\033[0;31m"
-GREEN="\033[0;92m"
-CYAN="\033[0;36m"
-GRAY="\033[0;37m"
-WHITE="\033[97m"
-NOCOLOR="\033[0m"
+RED='\033[0;31m'
+GREEN='\033[0;92m'
+CYAN='\033[0;36m'
+GRAY='\033[0;37m'
+WHITE='\033[97m'
+NOCOLOR='\033[0m'
 
 # Grab info
 ipv4=$(curl -s -4 --max-time 5 ifconfig.me 2>/dev/null)
