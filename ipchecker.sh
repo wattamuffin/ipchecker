@@ -4,7 +4,7 @@ VERSION="2.1"
 # Colors
 RED="\033[0;31m"
 GREEN="\033[0;92m"
-BLUE="\033[0;36m"
+BLUE="\033[0;32m"
 GRAY="\033[0;37m"
 WHITE="\033[97m"
 NOCOLOR="\033[0m"
