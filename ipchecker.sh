@@ -20,10 +20,10 @@ loc=$(echo "$data" | jq -r '.loc')
 asn=$(echo "$data" | jq -r '.org')
 
 # Other
-echo -e "${CYAN}██╗██████╗  ██████╗██╗  ██╗██╗  ██╗      IPv4: ${NOCOLOR}$ipv4"
+echo -e "${CYAN}██╗██████╗  ██████╗██╗  ██╗██╗  ██╗      IPv4${NOCOLOR}: $ipv4"
 echo -e "${CYAN}██║██╔══██╗██╔════╝██║  ██║██║ ██╔╝      "
-echo -e "${CYAN}██║██████╔╝██║     ███████║█████╔╝       Country: ${NOCOLOR}$country"
-echo -e "${CYAN}██║██╔═══╝ ██║     ██╔══██║██╔═██╗       City: ${NOCOLOR}$city"
-echo -e "${CYAN}██║██║     ╚██████╗██║  ██║██║  ██╗      Timezone: ${NOCOLOR}$timezone"
-echo -e "${CYAN}╚═╝╚═╝      ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝      Location: ${NOCOLOR}$loc"
-echo -e "${CYAN}                                          ASN: ${NOCOLOR}$asn"
+echo -e "${CYAN}██║██████╔╝██║     ███████║█████╔╝       Country${NOCOLOR}: $country"
+echo -e "${CYAN}██║██╔═══╝ ██║     ██╔══██║██╔═██╗       City${NOCOLOR}: $city"
+echo -e "${CYAN}██║██║     ╚██████╗██║  ██║██║  ██╗      Timezone${NOCOLOR}: $timezone"
+echo -e "${CYAN}╚═╝╚═╝      ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝      Location${NOCOLOR}: $loc"
+echo -e "${CYAN}                                         ASN${NOCOLOR}: $asn"
