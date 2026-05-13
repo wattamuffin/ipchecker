@@ -15,6 +15,7 @@ data=$(curl -s ipinfo.io)
 
 country=$(echo "$data" | jq -r '.country')
 city=$(echo "$data" | jq -r '.city')
+loc=$(echo "$data" | jq -r '.loc')
 timezone=$(echo "$data" | jq -r '.timezone')
 asn=$(echo "$data" | jq -r '.org')
 
@@ -24,4 +25,5 @@ echo -e "${CYAN}██║██╔══██╗██╔════╝██�
 echo -e "${CYAN}██║██████╔╝██║     ███████║█████╔╝       Country: ${NOCOLOR}$country"
 echo -e "${CYAN}██║██╔═══╝ ██║     ██╔══██║██╔═██╗       City: ${NOCOLOR}$city"
 echo -e "${CYAN}██║██║     ╚██████╗██║  ██║██║  ██╗      Timezone: ${NOCOLOR}$timezone"
-echo -e "${CYAN}╚═╝╚═╝      ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝      ASN: ${NOCOLOR}$asn"
+echo -e "${CYAN}╚═╝╚═╝      ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝      Location: ${NOCOLOR}$loc"
+echo -e "                                                ASN: ${NOCOLOR}$asn"
