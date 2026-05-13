@@ -4,7 +4,7 @@ VERSION="2.1"
 # Colors
 RED="\033[0;31m"
 GREEN="\033[0;92m"
-BLUE="\033[0;34m"
+BLUE="\033[0;36m"
 GRAY="\033[0;37m"
 WHITE="\033[97m"
 NOCOLOR="\033[0m"
@@ -19,7 +19,7 @@ timezone=$(echo "$data" | jq -r '.timezone')
 asn=$(echo "$data" | jq -r '.org')
 
 # Other
-echo -e "${BLUE}██╗██████╗  ██████╗██╗  ██╗██╗  ██╗      \033[0;34mIPv4: ${NOCOLOR}$ipv4"
+echo -e "${BLUE}██╗██████╗  ██████╗██╗  ██╗██╗  ██╗      \033[0;36mIPv4: ${NOCOLOR}$ipv4"
 echo -e "${BLUE}██║██╔══██╗██╔════╝██║  ██║██║ ██╔╝      "
 echo -e "${BLUE}██║██████╔╝██║     ███████║█████╔╝       ${BLUE}Country: ${NOCOLOR}$country"
 echo -e "${BLUE}██║██╔═══╝ ██║     ██╔══██║██╔═██╗       ${BLUE}City: ${NOCOLOR}$city"
