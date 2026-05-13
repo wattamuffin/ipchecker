@@ -26,4 +26,4 @@ echo -e "${CYAN}██║██████╔╝██║     █████�
 echo -e "${CYAN}██║██╔═══╝ ██║     ██╔══██║██╔═██╗       City: ${NOCOLOR}$city"
 echo -e "${CYAN}██║██║     ╚██████╗██║  ██║██║  ██╗      Timezone: ${NOCOLOR}$timezone"
 echo -e "${CYAN}╚═╝╚═╝      ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝      Location: ${NOCOLOR}$loc"
-echo -e "${CYAN}ASN: ${NOCOLOR}$asn"
+echo -e "${CYAN}                                          ASN: ${NOCOLOR}$asn"
