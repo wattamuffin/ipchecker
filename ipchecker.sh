@@ -15,8 +15,8 @@ data=$(curl -s ipinfo.io)
 
 country=$(echo "$data" | jq -r '.country')
 city=$(echo "$data" | jq -r '.city')
-loc=$(echo "$data" | jq -r '.loc')
 timezone=$(echo "$data" | jq -r '.timezone')
+loc=$(echo "$data" | jq -r '.loc')
 asn=$(echo "$data" | jq -r '.org')
 
 # Other
