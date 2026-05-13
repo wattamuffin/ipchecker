@@ -19,7 +19,7 @@ timezone=$(echo "$data" | jq -r '.timezone')
 asn=$(echo "$data" | jq -r '.org')
 
 # Other
-echo -e "${BLUE}██╗██████╗  ██████╗██╗  ██╗██╗  ██╗      \033[0;36m IPv4: ${NOCOLOR}$ipv4"
+echo -e "${BLUE}██╗██████╗  ██████╗██╗  ██╗██╗  ██╗      \033[36mIPv4: ${NOCOLOR}$ipv4"
 echo -e "${BLUE}██║██╔══██╗██╔════╝██║  ██║██║ ██╔╝      "
 echo -e "${BLUE}██║██████╔╝██║     ███████║█████╔╝       ${BLUE}Country: ${NOCOLOR}$country"
 echo -e "${BLUE}██║██╔═══╝ ██║     ██╔══██║██╔═██╗       ${BLUE}City: ${NOCOLOR}$city"
