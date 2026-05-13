@@ -19,9 +19,9 @@ timezone=$(echo "$data" | jq -r '.timezone')
 asn=$(echo "$data" | jq -r '.org')
 
 # Other
-echo -e "${GREEN}██╗██████╗  ██████╗██╗  ██╗██╗  ██╗      ${GRAY}IPv4: ${NOCOLOR}$ipv4"
-echo -e "${GREEN}██║██╔══██╗██╔════╝██║  ██║██║ ██╔╝      "
-echo -e "${GREEN}██║██████╔╝██║     ███████║█████╔╝       ${GRAY}Country: ${NOCOLOR}$country"
-echo -e "${GREEN}██║██╔═══╝ ██║     ██╔══██║██╔═██╗       ${GRAY}City: ${NOCOLOR}$city"
-echo -e "${GREEN}██║██║     ╚██████╗██║  ██║██║  ██╗      ${GRAY}Timezone: ${NOCOLOR}$timezone"
-echo -e "${GREEN}╚═╝╚═╝      ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝      ${GRAY}ASN: ${NOCOLOR}$asn"
+echo -e "${BLUE}██╗██████╗  ██████╗██╗  ██╗██╗  ██╗      ${BLUE}IPv4: ${NOCOLOR}$ipv4"
+echo -e "${BLUE}██║██╔══██╗██╔════╝██║  ██║██║ ██╔╝      "
+echo -e "${BLUE}██║██████╔╝██║     ███████║█████╔╝       ${BLUE}Country: ${NOCOLOR}$country"
+echo -e "${BLUE}██║██╔═══╝ ██║     ██╔══██║██╔═██╗       ${BLUE}City: ${NOCOLOR}$city"
+echo -e "${BLUE}██║██║     ╚██████╗██║  ██║██║  ██╗      ${BLUE}Timezone: ${NOCOLOR}$timezone"
+echo -e "${BLUE}╚═╝╚═╝      ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝      ${BLUE}ASN: ${NOCOLOR}$asn"
